@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mvoli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-12 06:58:38 "/>
+        <attribute name="created" value="bXZvbGk7REVTS1RPUC1GUzFPOTE4OzIwMjEtMDgtMTI7IjA0OjQyOjA1ICI7Mjc2Mw=="/>
+        <attribute name="edited" value="bXZvbGk7REVTS1RPUC1GUzFPOTE4OzIwMjEtMDgtMTI7IjA2OjU4OjM4ICI7MTsyODg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="notas" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Qual &#233; o seu nome?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Qual o seu sobrenome?&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Qual a sua idade?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;O seu nome &#233;: &quot; &amp; nome &amp; &quot; e seu sobrenome &#233;:  &quot; &amp; sobrenome &amp; &quot; sua idade &#233;: &quot; &amp; idade &amp; &quot; anos&quot;" newline="True"/>
+            <output expression="&quot;Voc&#234; est&#225; com suas notas em m&#227;os?&quot;" newline="True"/>
+            <input variable="notas"/>
+            <if expression="notas">
+                <then>
+                    <output expression="&quot;Vamos iniciar o calculo de sua m&#233;dia. Qual o valor a sua primeira nota?&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente, n&#227;o conseguiremos realizar os calculos das suas notas. Favor, entrar em contato com a equipe da coordena&#231;&#227;o.&quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <input variable="Nota1"/>
+            <output expression="&quot;Ok. Qual a sua segunda nota?&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Ok. Qual a sua terceira nota?&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Falta pouco! Qual sua quarta nota?&quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="&quot;Segue sua nota m&#233;dia: &quot; &amp; media" newline="True"/>
+            <if expression="media&gt;=7.0">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; atingiu a nota m&#233;dia para aprova&#231;&#227;o nesse curso!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; n&#227;o alcan&#231;ou a nota m&#233;dia para aprova&#231;&#227;o nesse curso.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

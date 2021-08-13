@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mvoli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-12 03:49:40 "/>
+        <attribute name="created" value="bXZvbGk7REVTS1RPUC1GUzFPOTE4OzIwMjEtMDgtMTI7IjAzOjI5OjA5ICI7Mjc3MQ=="/>
+        <attribute name="edited" value="bXZvbGk7REVTS1RPUC1GUzFPOTE4OzIwMjEtMDgtMTI7IjAzOjQ5OjQwICI7MTsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, soma" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="soma" expression="(nota1+nota2+nota3+nota4)"/>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
